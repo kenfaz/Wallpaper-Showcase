@@ -8,14 +8,15 @@ Steam Color Palette
 #2a475e
 #c7d5e0
 */
-header {
-  width: 100%;
-  height: 100%;
-}
 html {
   height: 100%;
   width: 100%;
 }
+header {
+  width: 100%;
+  height: 100%;
+}
+
 
 body {
   background-color: #171a21;
@@ -28,15 +29,51 @@ body {
   display: table;
 }
 
+footer {
+  background-color: #171a21;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+#steam-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;  margin-top: 10px;
+}
+
+#yt-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  height: 100%;
+}
 .header {
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px
+  padding: 20px;
 }
 
-div:not(.box-1, .main-navigator, .nav-body, .main-body) {
+div:not(.box-1, .main-navigator, .nav-body, .main-body, .logo-div, .logo-name) {
   display: inline-flex;
   margin: auto;
 }
@@ -111,7 +148,8 @@ fieldset:last-of-type {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-h1, p {
+h1,
+p {
   text-align: center;
 }
 
@@ -226,7 +264,10 @@ input[type="checkbox"] {
   margin: auto;
 }
 
-.home-navigator, .creators-navigator, .gallery-navigator, .about-navigator {
+.home-navigator,
+.creators-navigator,
+.gallery-navigator,
+.about-navigator {
   width: 100%;
   height: 100%;
   color: white;
@@ -238,10 +279,9 @@ input[type="checkbox"] {
   width: 100%;
   height: 100%;
   display: flex;
-
 }
 
-  /* Miscellaneous*/
+/* Miscellaneous*/
 .bold {
   font-weight: 500px;
 }
@@ -298,4 +338,10 @@ input[type="checkbox"] {
   padding-left: 20px;
 }
 
-a, a:hover, a:active, a:visited { color: white; text-decoration: none; }
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
