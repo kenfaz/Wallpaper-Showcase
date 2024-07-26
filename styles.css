@@ -12,13 +12,14 @@ html {
   height: 100%;
   width: 100%;
 }
+
 header {
   width: 100%;
   height: 100%;
 }
 
 body {
-  background-image: url('Assets/Background_image.png');
+  background-image: url("Assets/Background_image.png");
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
@@ -31,7 +32,7 @@ body {
 }
 
 footer {
-  background-image: url('Assets/Background_image2.png');
+  background-image: url("Assets/Background_image2.png");
   height: 100px;
   width: 100%;
   margin: auto;
@@ -47,7 +48,31 @@ footer {
   transition: transform 0.3s ease 0s;
 }
 
+#discord-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease 0s;
+}
+
+#github-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease 0s;
+}
+
 #steam-logo:hover {
+  transform: translateY(-10px);
+}
+
+#discord-logo:hover {
+  transform: translateY(-10px);
+}
+
+#github-logo:hover {
   transform: translateY(-10px);
 }
 
@@ -66,7 +91,7 @@ footer {
   display: inline;
   height: 50%;
   border-radius: 20px;
-  margin: 10px auto;
+  margin: auto;
   padding-bottom: 5px;
 }
 
@@ -81,6 +106,12 @@ footer {
 .header img {
   width: 5%;
   margin: auto;
+  /*
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  */
 }
 
 .logo-div img {
@@ -154,8 +185,8 @@ div:not(.box-1, .main-navigator, .nav-body, .main-body, .logo-div, .logo-name) {
 }
 
 .profile {
-  width: 20%;
-  height: 20%;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
   margin: auto;
   display: flex;
@@ -229,7 +260,6 @@ p {
 }
 
 #profile {
-  border: 2px solid white;
   border-radius: 50%;
 }
 
@@ -243,4 +273,13 @@ a:active,
 a:visited {
   color: white;
   text-decoration: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
 }
