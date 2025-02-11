@@ -19,7 +19,7 @@ header {
 }
 
 body {
-  background-image: url("Assets/Background_image.png");
+  background-image: url("Assets/Background_image3.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
@@ -119,8 +119,11 @@ footer {
 }
 .info-div {
   background-color: black;
-  width: 30%;
+  border: 2px solid white;
+  width: 40%;
   border-radius: 20px;
+  padding: 10px;
+  text-align: justify;
 }
 
 div:not(.box-1, .main-navigator, .nav-body, .main-body, .logo-div, .logo-name) {
@@ -261,6 +264,7 @@ p {
 
 #profile {
   border-radius: 50%;
+  border: 2px solid white;
 }
 
 #profile-text {
