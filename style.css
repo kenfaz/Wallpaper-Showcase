@@ -193,7 +193,7 @@ div:not(.box-1, .main-navigator, .nav-body, .main-body, .logo-div, .logo-name, .
 .names {
   width: 100%;
   height: 100%;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   text-align: center;
   flex-direction: column;
 }
