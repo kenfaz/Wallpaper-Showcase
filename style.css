@@ -345,9 +345,3 @@ a:visited {
     border-color: rgb(255, 255, 255);
   }
 }
-
-@media (max-width: "786px") {
-  .gallery {
-    flex-direction: column;
-  }
-}
